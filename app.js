@@ -24,13 +24,14 @@ const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
         userScore++;
         userScorePara.innerText = userScore;
-        // এখানে স্পেস ঠিক করা হয়েছে
+
         msg.innerText = `You Win! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     } else {
         compScore++;
         compScorePara.innerText = compScore;
-        // এখানে স্পেস ঠিক করা হয়েছে
+      
+
         msg.innerText = `You lost. ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
